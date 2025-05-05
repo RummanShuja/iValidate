@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    /* background-color: red; */
+    font-family: "Noto Sans", sans-serif;
+    /* overflow: hidden; */
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 12px 10px;
+    font-size: large;
+}
+ul{
+    display: flex;
+    
+}
+ul li{
+    list-style: none;
+    margin: 10px;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+ul>li>a:hover{
+    color: rgb(126, 158, 180);
+}
+
+main{
+    min-height: 90vh;
+}
+
+.container{
+    margin: auto;
+    /* border: 2px solid black; */
+    max-width: 80vw;
+    padding: 15px;
+}
+input{
+    min-width: 25vw;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 0 9px;
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.container h1{
+    padding: 15px 0;
+}
+.logo img{
+    width: 20px;
+    /* padding: 6px 0; */
+    filter: invert(1);
+}
+
+#resultCont div::first-letter {
+    text-transform: capitalize;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 600px){
+    body{
+        background-color: lightblue;
+    }
+    .container{
+        font-size: 12px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .logo{
+        padding: 6px 0;
+    }
+    .logo span{
+        font-size: 20px;
+    }
+    .logo img{
+        width: 20px;
+        filter: invert(1);
+    }
+}
